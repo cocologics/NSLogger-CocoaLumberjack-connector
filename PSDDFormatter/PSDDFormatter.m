@@ -20,17 +20,17 @@
 
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage {
   NSString *logLevel;
-  switch (logMessage->logFlag) {
+  switch (logMessage->_flag) {
     case LOG_FLAG_ERROR : logLevel = @"Err!"; break;
     case LOG_FLAG_WARN  : logLevel = @"Warn"; break;
     case LOG_FLAG_INFO  : logLevel = @"    "; break;
     default             : logLevel = @"Verb"; break;
   }
 
-  NSString *dateAndTime = [dateFormatter stringFromDate:(logMessage->timestamp)];
-  NSString *logMsg = logMessage->logMsg;
+  NSString *dateAndTime = [dateFormatter stringFromDate:(logMessage->_timestamp)];
+  NSString *logMsg = logMessage.message;
 
-  return [NSString stringWithFormat:@"%@(%@) %@ %@ <%d>", dateAndTime, [logMessage threadID], logLevel, logMsg, logMessage->lineNumber];
+  return [NSString stringWithFormat:@"%@(%@) %@ %@ <%lu>", dateAndTime, [logMessage threadID], logLevel, logMsg, (unsigned long)logMessage->_line];
 }
 
 @end
