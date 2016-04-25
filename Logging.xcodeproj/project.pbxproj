@@ -32,6 +32,8 @@
 		695425801B4A011600F1FA02 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 695425661B4A011600F1FA02 /* DDDispatchQueueLogFormatter.m */; };
 		695425811B4A011600F1FA02 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 695425671B4A011600F1FA02 /* DDMultiFormatter.h */; };
 		695425821B4A011600F1FA02 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 695425681B4A011600F1FA02 /* DDMultiFormatter.m */; };
+		BC5884331CCE67C900D9DE2A /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC6DB0D51CC90DBA0094D9F3 /* module.modulemap */; };
+		BC6DB0D71CC90E570094D9F3 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = BC6DB0D61CC90E570094D9F3 /* Logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E499718E151385EB0046D071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E499718D151385EB0046D071 /* Foundation.framework */; };
 		E49973321513866C0046D071 /* LoggerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E499732F1513866C0046D071 /* LoggerClient.h */; };
 		E49973331513866C0046D071 /* LoggerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E49973301513866C0046D071 /* LoggerClient.m */; };
@@ -42,6 +44,19 @@
 		E49975BB151389960046D071 /* PSDDFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E49975B7151389960046D071 /* PSDDFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49975BC151389960046D071 /* PSDDFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E49975B8151389960046D071 /* PSDDFormatter.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC0DE7321CCA7C35000A4A2D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include/Logging;
+			dstSubfolderSpec = 16;
+			files = (
+				BC5884331CCE67C900D9DE2A /* module.modulemap in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6954254E1B4A011600F1FA02 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
@@ -69,6 +84,8 @@
 		695425661B4A011600F1FA02 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		695425671B4A011600F1FA02 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
 		695425681B4A011600F1FA02 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		BC6DB0D51CC90DBA0094D9F3 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		BC6DB0D61CC90E570094D9F3 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = SOURCE_ROOT; };
 		E499718A151385EB0046D071 /* libLogging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogging.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E499718D151385EB0046D071 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E499732F1513866C0046D071 /* LoggerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggerClient.h; path = "Client Logger/iOS/LoggerClient.h"; sourceTree = "<group>"; };
@@ -135,6 +152,8 @@
 		E499717F151385EA0046D071 = {
 			isa = PBXGroup;
 			children = (
+				BC6DB0D51CC90DBA0094D9F3 /* module.modulemap */,
+				BC6DB0D61CC90E570094D9F3 /* Logging.h */,
 				E499718F151385EB0046D071 /* Logging */,
 				E49CC0EB16A5612100D1BBFD /* Configurations */,
 				E499718C151385EB0046D071 /* Frameworks */,
@@ -293,6 +312,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6DB0D71CC90E570094D9F3 /* Logging.h in Headers */,
 				6954257D1B4A011600F1FA02 /* DDContextFilterLogFormatter.h in Headers */,
 				695425741B4A011600F1FA02 /* DDFileLogger.h in Headers */,
 				6954256F1B4A011600F1FA02 /* DDASLLogCapture.h in Headers */,
@@ -326,6 +346,7 @@
 				E4997186151385EB0046D071 /* Sources */,
 				E4997187151385EB0046D071 /* Frameworks */,
 				E4997188151385EB0046D071 /* Headers */,
+				BC0DE7321CCA7C35000A4A2D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -430,8 +451,8 @@
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
@@ -455,8 +476,8 @@
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
 				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DSTROOT = /tmp/Logging.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Logging-Prefix.pch";

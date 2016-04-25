@@ -1,0 +1,7 @@
+// NOTE: As long as static libraries are being used as modules
+// this modulemap may _not_ declare a framework module. - afh
+
+/* framework */ module Logging {
+  umbrella header "Logging.h"
+  export *
+}
