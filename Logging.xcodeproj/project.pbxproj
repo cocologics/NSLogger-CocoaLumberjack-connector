@@ -450,7 +450,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DSTROOT = /tmp/Logging.dst;
@@ -475,7 +474,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
 			buildSettings = {
-				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DSTROOT = /tmp/Logging.dst;
