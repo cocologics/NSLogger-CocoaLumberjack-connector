@@ -408,6 +408,126 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		840128181D09FB37006B8A1D /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49CC0F116A5612100D1BBFD /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Testing;
+		};
+		840128191D09FB37006B8A1D /* Testing */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DSTROOT = /tmp/Logging.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ALLOW_COCOA_USE,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+			};
+			name = Testing;
+		};
+		8401281A1D09FB3C006B8A1D /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49CC0F116A5612100D1BBFD /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		8401281B1D09FB3C006B8A1D /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DSTROOT = /tmp/Logging.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ALLOW_COCOA_USE,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+			};
+			name = AdHoc;
+		};
+		8401281C1D09FB41006B8A1D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49CC0F116A5612100D1BBFD /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		8401281D1D09FB41006B8A1D /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49CC0F816A5612100D1BBFD /* iOS-StaticLibrary.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DSTROOT = /tmp/Logging.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Logging-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					ALLOW_COCOA_USE,
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+			};
+			name = Distribution;
+		};
 		E4997198151385EB0046D071 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E49CC0EF16A5612100D1BBFD /* Debug.xcconfig */;
@@ -500,6 +620,9 @@
 			buildConfigurations = (
 				E4997198151385EB0046D071 /* Debug */,
 				E4997199151385EB0046D071 /* Release */,
+				840128181D09FB37006B8A1D /* Testing */,
+				8401281A1D09FB3C006B8A1D /* AdHoc */,
+				8401281C1D09FB41006B8A1D /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -509,6 +632,9 @@
 			buildConfigurations = (
 				E499719B151385EB0046D071 /* Debug */,
 				E499719C151385EB0046D071 /* Release */,
+				840128191D09FB37006B8A1D /* Testing */,
+				8401281B1D09FB3C006B8A1D /* AdHoc */,
+				8401281D1D09FB41006B8A1D /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
