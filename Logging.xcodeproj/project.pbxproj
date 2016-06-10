@@ -50,7 +50,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = include/Logging;
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 6;
 			files = (
 				BC5884331CCE67C900D9DE2A /* module.modulemap in CopyFiles */,
 			);
